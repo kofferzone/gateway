@@ -49,23 +49,25 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="qr-container">
-            <div class="qr-code">
-                <img src="assets/qr-code.png" alt="UPI QR Code">
-            </div>
-            <div class="upi-id">
-                <p>Scan the QR code or use the UPI ID:</p>
-                <div class="upi-id-content">
-                    <strong id="upi-id">inulute@boi</strong>
-                    <button id="upilinkapp" class="copy-button">Copy</button>
-                    <lottie-player src="https://lottie.host/2b51d7af-7099-49f5-93df-f8190dde11bb/WU9eejAueC.json" background="#FFFFFF" speed="1.5" loop autoplay direction="1" mode="normal" class="upi-icon"></lottie-player>
+
+    <a href="upi://pay?pa=developerkhalid@psb&cu=INR">
+        <div class="container">
+            <div class="qr-container">
+                <div class="qr-code">
+                    <img src="assets/qr-code.png" alt="UPI QR Code">
+                </div>
+                <div class="upi-id">
+                    <p>Scan the QR code or use the UPI ID:</p>
+                    <div class="upi-id-content">
+                        <strong id="upi-id">inulute@boi</strong>
+                        <button id="upilinkapp" class="copy-button">Copy</button>
+                        <lottie-player src="https://lottie.host/2b51d7af-7099-49f5-93df-f8190dde11bb/WU9eejAueC.json" background="#FFFFFF" speed="1.5" loop autoplay direction="1" mode="normal" class="upi-icon"></lottie-player>
+                    </div>
                 </div>
             </div>
+
         </div>
-
-    </div>
-
+    </a>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const copyButton = document.getElementById("copy-button");
